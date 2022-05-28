@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+}
+    
+::-webkit-scrollbar-track {
+    background-color:#3a4046;
+}
+    
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 5px;
+    background-color:#282933;
+}
+    
+::-webkit-scrollbar-thumb:hover{
+    background-color:#4d7477;
+}
+    
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+}
+    
+::-webkit-scrollbar{
+    width: 5px;
+}
+.hello{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: url('/img/cityfon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#mainform{
+    display: none;
+    /* justify-content: center; */
+    width: 45%;
+    height: 40vh;
+    background: red;
+}
+.mainform{
+    overflow: auto;
+    display: none;
+    /* justify-content: center; */
+    width: 45%;
+    height: 40vh;
+    background: red;
+    animation: showBlock 1s;
+}
+@keyframes showBlock{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+.hideMainForm{
+    animation: removeBlock 1s;
+    animation-fill-mode: forwards;
+}
+.textShow{
+    font-size: 1.2em;
+    transition: 2s;
+    height: auto;
+    animation: textShow 1s;
+}
+@keyframes textShow{
+    0%{
+        opacity: 0;
+        width: 0%;
+        height: 0vh;
+    }50%{
+        opacity: 0;
+        width: 75%;
+        height: 30vh;
+    }100%{
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+}
+.textHide{
+    pointer-events: none;
+    user-select: none;
+    animation: textHidden 1s;
+}
+
+@keyframes textHidden{
+    0%{
+        width: 100%;
+    }50%{
+        width: 50%;
+        opacity: 0;
+    }100%{
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes removeBlock{
+    0%{
+        opacity: 1;
+        width: 45%;
+    }
+    100%{
+        width: 0%;
+        opacity: 0;
+    }
+}
+
+.newDiv{
+    /* opacity: 0; */
+    width: 150px;
+    height: 50px;
+    background: yellow;
+    transition: 2s;
+    animation: showDiv 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showDiv{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+.clickCommerc{
+    width: 50%;
+    height: 450px;
+    background: rgb(86, 222, 240);
+    border-radius: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickCommerc:hover{
+    cursor: pointer;
+}
+
+.blockShow{
+    width: 50%;
+    height: 450px;
+    background: rgb(86, 222, 240);
+    border-radius: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    animation: showCommercBlock .2s;
+}
+
+.clickCommerc>h3{
+    user-select: none;
+}
+
+@keyframes showCommercBlock{
+    0%{
+        width:50%;
+        height: 450px;
+    }50%{
+        width: 55%;
+        height: 470px;
+    }100%{
+        width: 50%;
+        height: 450px;
+    }
+}
+
+#textInper{
+    width: 60%;
+    height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.2em;
+}
+
+#but{
+    width: 20%;
+    height: 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: .2s;
+}
+#but:hover{
+    background: cornflowerblue;
+    color: white;
+}
+
+#delInner{
+    width: 10%;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+}
+
+#delInner:hover{
+    background: cornflowerblue;
+    color: white;
+}
+
+.uprazh{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    border-radius: 30px;
+    color:gray;
+    background: cornsilk;
+    padding: 5px;
+    font-size: 1.3em;
+}

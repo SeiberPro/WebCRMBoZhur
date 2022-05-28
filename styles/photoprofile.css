@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+}
+.glav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/img/profilefon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-180deg,#c7c6c6, rgb(42, 46, 51));
+    width: 30%;
+    height: 35vh;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    width: 70%;
+    height: 25vh;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+.inp{
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.1em;
+}

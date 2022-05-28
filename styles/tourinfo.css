@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+body{
+    background: url(/img/travelfon.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-180deg,#e60808, rgb(15, 110, 219));
+    width: 45%;
+    height: 47vh;
+    border-radius: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.imageTour{
+    width:100%;
+    min-height:90%;
+    max-height: 90%;
+    border-radius:20px;
+}
+.imageTour:hover{
+    cursor: pointer;
+}
+.changeImg{
+    display: none;
+    z-index: 2;
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+    position: relative;
+    top: -50%;
+    border: 1px solid white;
+    transition: .2s;
+    border-radius: 10px;
+}
+.changeImg:hover{
+    cursor: pointer;
+    background: white;
+    border: 1px solid black;
+}
+.imageFile{
+    font-size: 1.2em;
+}
+.changeInp:hover .imageFile{
+    display: flex;
+    z-index: 1;
+    background: white;
+    animation: showImage 1s;
+}
+.changeInp:hover .imageTour{
+    filter: blur(1px);
+}
+@keyframes showImage{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+.imageFile{
+    display:none;
+    position: relative;
+    top: -46%;
+    width: 100%;
+    height: 10%;
+}
+.backinfo{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 3%;
+    margin-left: 3%;
+    /* margin-bottom: 10%; */
+    /* background: red; */
+}
+.backtotour{
+    transition: .1s;
+}
+.backtotour:hover{
+    cursor: pointer;
+    filter: invert(1);
+
+}
+.cityfield{
+    /* align-items: center; */
+    font-size: 1em;
+    width: 70%;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: white;
+    background:none;
+    border-radius: 5px;
+}
+.opt{
+    color: black;
+}
+.fieldsinput{
+    font-size: 1.2em;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: flex-end;
+}
+.inpi{
+    width: 50%;
+    margin-left: auto;
+    margin-top: auto;
+    display: flex;
+    font-size: 1.2em;
+    height: 20%;
+}
+.inpdel{
+    font-size: 1.0em;
+}
+.coord{
+    width: 100%;
+    height: 90%;
+    max-height: 90%;
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    /* margin-top:5%; */
+}
+.changeform{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.changeInp{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    min-height: 100%;
+    max-height: 100%;
+    margin-left: 10px;
+    width: 50%;
+}
+.coord1{
+    /* background: red; */
+    justify-content:center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+.coord1>input{
+    margin-left: 50%;
+    margin-bottom: 2%;
+    font-size: 1.1em;
+    background: none;
+    border: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: white;
+    width: 20px;
+    text-align: center;
+    outline: none;
+}
+#ok{
+    width: 50%;
+    padding: 2px;
+    border: 1px solid white;
+    background: rgb(221, 217, 217);
+    transition: .1s;
+    border-radius: 2px;
+}
+#ok:hover{
+    background: rgb(83, 83, 83);
+    color: white;
+}
+.input{
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.1em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.data{
+    font-size: 1.1em;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#delete{
+    border-radius: 2px;
+    margin-right: 5px;
+    padding: 2px;
+    border: 1px solid white;
+    background: linear-gradient(to right,red,rgb(247, 14, 14), red);
+    transition: .1s;
+}
+#delete:hover{
+    background: linear-gradient(to right,rgb(185, 22, 22),red);
+    color: white;
+}
+.deleter{
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: absolute;
+    display:flex;
+    width: 45%;
+    height: 47vh;
+    background: linear-gradient(-180deg,#e60808, rgb(15, 110, 219));
+    margin-left: 27.5%;
+    margin-top: 27.5vh;
+}
+.inputdelet{
+    text-align: center;
+    margin-right: 5px;
+    font-size: 1.1em;
+    width: 40%;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    transition: .2s;
+
+}
+.inputdelet:hover{
+    background: rgb(119, 119, 119);
+    color: white;
+}

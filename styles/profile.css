@@ -1,0 +1,236 @@
+img{
+    max-width: 100%;
+}
+header>a{
+    display: none;
+}
+.main{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    flex-direction: row;
+}
+.menu{
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 0 1px;
+    display: flex;
+}
+.menu-list{
+    position: relative;
+    /* box-shadow: 0 0 1px; */
+}
+.menu-link{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 20%;
+    border-bottom: 1px solid #ffcc00;
+}
+.menu-link:hover{
+    cursor: pointer;
+}
+.menu-link:hover .menu-icon{
+    background: orange;
+}
+.menu-icon{
+    height: 100%;
+    position: relative;
+    display: flex;
+    width: 200px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+    transition: .3s;
+}
+#back{
+    font-size: 1em;
+}
+.content{
+    position: relative;
+    box-shadow: 0 0 1px;
+    background: url("/img/travelfon.jpg");
+    background-size: 100% 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow: auto;
+    /* border-left: 1px solid #ffcc00; */
+}
+.content-menu{
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.aboutu{
+    background: white;
+    box-shadow: 0 0 8px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    height: 26vh;
+    width: 33%;
+    justify-content: center;
+    border: 1px solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: .2s;
+    border-radius: 20px;
+}
+.aboutu:hover{
+    box-shadow: 0 0 10px 3px black;
+}
+.aboba{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+}
+.aboba>.zaglav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin-top: 10px;
+}
+.aboba>.table>.stat{
+    overflow: auto;
+    /* background: red; */
+    height: 100%;
+    width: 60%;
+    margin-top: -0.5%;
+    position: relative;;
+    justify-content:center;
+    display: flex;
+    /* align-items:flex-end; */
+    flex-direction: column;
+}
+#photoAccount{
+    border: 1px solid black;
+    height:100%;
+    border-radius:100px;
+    box-sizing:border-box;
+    background-size: 100% 100%;
+    width:100%;
+    position: relative;
+}
+#photoChange{
+    border-radius: 60px;
+    width: 30%;
+    height: 80%;
+    transition: .5s;
+}
+#photoChange:hover{
+    cursor: pointer;
+}
+#photoChange:hover button{
+    cursor: pointer;
+    display: block;
+    animation: showButtonChange .5s;
+    animation-fill-mode: forwards;
+}
+#photoChange:hover img{
+    filter: blur(1px);
+}
+@keyframes showButtonChange{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+
+}
+#photoChange>button{
+    border: none;
+    background: rgb(218, 218, 218);
+    border-radius: 30px;
+    font-size: 1em;
+    padding: 3px;
+    font-family:'Hind Siliguri', sans-serif;
+    display: none;
+    position: absolute;
+    color: black;
+    right: 3%;
+    width: 33%;
+    top: 50%;
+}
+.settings{
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 5px;
+}
+.photolink{
+    transition: .1s;
+}
+.photolink:hover{
+    transform: scale(1.1);
+
+}
+.table{
+    display: flex;
+    /* justify-content:space-between; */
+    margin-top: 3px;
+    height: 78.5%;
+}
+.zaglav>i{
+    float: left;
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.stat>li{
+    display: flex;
+    justify-content: flex-end;
+}
+.stat>li:hover{
+    cursor: pointer;
+}
+.stat>li>input{
+    border: none;
+    outline: none;
+}
+.stat>li>input:hover{
+    cursor: pointer;
+}
+.infoStudentStat{
+    box-shadow: 0 0 8px;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    background: white;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid;
+}
+footer{
+    position: relative;
+    box-shadow: 0 0 5px;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+@media screen and (max-width: 1200px){
+    .aboutu{
+        width: 50%;
+    }
+}

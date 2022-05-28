@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background: url("/img/airport.jpg");
+    background-size: 100% 100%;
+}
+.fon{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 40vh;
+    background: linear-gradient(to right,#1fa2ff, #12d8fa, #a6ffcb);
+    border-radius: 10px;
+}
+.password>hr{
+    width: 50%;
+    margin-left: 25%;    
+    text-align: center;
+    border: 1px solid white;
+}
+.field{
+    display: flex;
+    justify-content: center;
+}
+.field>span{
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.fieldinp{
+    display: flex;
+    margin-left: 20%;
+    font-size: 1.2em;
+    border: 1px solid white;
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 60%;
+}
+.okay{
+    background: linear-gradient(to right, #e93c3c, #2d9be9, #12d8fa);
+    margin-top: 20px;
+    font-size: 1.1em;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    margin-left: 40%;
+    transition: .3s;
+}
+.okay:hover{
+    cursor: pointer;
+    background-position: 78px;
+    color: white;
+    background: linear-gradient(to right,#12d8fa,#2d9be9,#e93c3c);
+}
+.alert{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+}
